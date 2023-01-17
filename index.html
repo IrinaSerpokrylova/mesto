@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>место</title>
+    <link rel="stylesheet" href="./pages/pages.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <img
+        src="./images/healet_logo.svg"
+        class="header__logo"
+        alt="Логотип Место.Россия"
+      />
+    </header>
+    <main class="content">
+      <section class="profile">
+        <div class="profile__info">
+          <img
+            src="./images/avatar.svg"
+            class="profile__avatar"
+            alt="Жак-Ив Кусто"
+          />
+          <div class="profile__personage">
+            <div class="profile__rename">
+              <h1 class="profile__name">Жак-Ив Кусто</h1>
+              <button class="profile__edit-button"></button>
+            </div>
+            <p class="profile__vocation">Исследователь океана</p>
+          </div>
+        </div>
+        <button class="profile__add-button"></button>
+      </section>
+      <section class="elements">
+        <ul class="elelements__grid">
+          <li class="element">
+            <img
+              src="./images/Seoul.JPG"
+              class="element__rectangle"
+              alt="Необычный корабль в Сеуле"
+            />
+            <div class="element__group">
+              <h2 class="element__place">Сеул</h2>
+              <button class="element__like"></button>
+            </div>
+          </li>
+          <li class="element">
+            <img
+              src="./images/Beijing.JPG"
+              class="element__rectangle"
+              alt="Китайский красный фонарик"
+            />
+            <div class="element__group">
+              <h2 class="element__place">Пекин</h2>
+              <button class="element__like"></button>
+            </div>
+          </li>
+          <li class="element">
+            <img
+              src="./images/Shanghai.JPG"
+              class="element__rectangle"
+              alt="Остановка и двухэтажный трамвай"
+            />
+            <div class="element__group">
+              <h2 class="element__place">Шанхай</h2>
+              <button class="element__like"></button>
+            </div>
+          </li>
+          <li class="element">
+            <img
+              src="./images/Moscow.jpg"
+              class="element__rectangle"
+              alt="Красная площадь дом 1"
+            />
+            <div class="element__group">
+              <h2 class="element__place">Москва</h2>
+              <button class="element__like"></button>
+            </div>
+          </li>
+          <li class="element">
+            <img
+              src="./images/St-Petersburg.jpg"
+              class="element__rectangle"
+              alt="Иссакиевский Собор"
+            />
+            <div class="element__group">
+              <h2 class="element__place">Санкт-Петербург</h2>
+              <button class="element__like"></button>
+            </div>
+          </li>
+          <li class="element">
+            <img
+              src="./images/Sochi.jpg"
+              class="element__rectangle"
+              alt="Пальма в Сочи"
+            />
+            <div class="element__group">
+              <h2 class="element__place">Сочи</h2>
+              <button class="element__like"></button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">&copy; 2020 Mesto Russia</footer>
+    <div class="popup">
+      <div class="popup__container">
+        <button class="popup__close" type="button"></button>
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <form class="popup__form" name="form_profile">
+          <input
+            class="popup__input"
+            type="text"
+            name="name"
+            placeholder="Имя"
+            required
+            minlength="2"
+          />
+          <input
+            class="popup__input"
+            type="text"
+            name="vocation"
+            placeholder="Предназначение"
+            required
+            minlength="2"
+          />
+          <!-- <button class="popup__save" type="submit">Сохранить</button> -->
+          <input class="popup__save" type="submit" value="Сохранить" />
+        </form>
+      </div>
+    </div>
+    <script src="./vendor/script.js"></script>
+  </body>
+</html>
