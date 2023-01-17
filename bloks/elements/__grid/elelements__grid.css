@@ -1,4 +1,4 @@
-.elelement__grid {
+.elelements__grid {
   margin: 0;
   padding: 0;
   display: grid;
@@ -10,13 +10,13 @@
 }
 
 @media screen and (max-width: 950px) {
-  .elelement__grid {
+  .elelements__grid {
     justify-items: center;
   }
 }
 
 @media screen and (max-width: 620px) {
-  .elelement__grid {
+  .elelements__grid {
     max-width: 100%;
     grid-template-columns: 1fr;
     gap: 20px;
