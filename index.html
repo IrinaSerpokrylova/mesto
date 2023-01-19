@@ -25,12 +25,12 @@
           <div class="profile__personage">
             <div class="profile__rename">
               <h1 class="profile__name">Жак-Ив Кусто</h1>
-              <button class="profile__edit-button"></button>
+              <button class="profile__edit-button" type="button"></button>
             </div>
             <p class="profile__vocation">Исследователь океана</p>
           </div>
         </div>
-        <button class="profile__add-button"></button>
+        <button class="profile__add-button" type="button"></button>
       </section>
       <section class="elements">
         <ul class="elements__grid">
@@ -42,7 +42,10 @@
             />
             <div class="element__group">
               <h2 class="element__place">Сеул</h2>
-              <button class="element__like"></button>
+              <button
+                class="element__like element__like_active"
+                type="button"
+              ></button>
             </div>
           </li>
           <li class="element">
@@ -53,7 +56,10 @@
             />
             <div class="element__group">
               <h2 class="element__place">Пекин</h2>
-              <button class="element__like"></button>
+              <button
+                class="element__like element__like_active"
+                type="button"
+              ></button>
             </div>
           </li>
           <li class="element">
@@ -64,7 +70,10 @@
             />
             <div class="element__group">
               <h2 class="element__place">Шанхай</h2>
-              <button class="element__like"></button>
+              <button
+                class="element__like element__like_active"
+                type="button"
+              ></button>
             </div>
           </li>
           <li class="element">
@@ -75,7 +84,10 @@
             />
             <div class="element__group">
               <h2 class="element__place">Москва</h2>
-              <button class="element__like"></button>
+              <button
+                class="element__like element__like_active"
+                type="button"
+              ></button>
             </div>
           </li>
           <li class="element">
@@ -86,7 +98,10 @@
             />
             <div class="element__group">
               <h2 class="element__place">Санкт-Петербург</h2>
-              <button class="element__like"></button>
+              <button
+                class="element__like element__like_active"
+                type="button"
+              ></button>
             </div>
           </li>
           <li class="element">
@@ -97,13 +112,18 @@
             />
             <div class="element__group">
               <h2 class="element__place">Сочи</h2>
-              <button class="element__like"></button>
+              <button
+                class="element__like element__like_active"
+                type="button"
+              ></button>
             </div>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="footer">&copy; 2020 Mesto Russia</footer>
+    <footer class="footer">
+      <p class="footer__author">&copy; 2020 Mesto Russia</p>
+    </footer>
     <div class="popup">
       <div class="popup__container">
         <button class="popup__close" type="button"></button>
@@ -130,6 +150,6 @@
         </form>
       </div>
     </div>
-    <script src="./vendor/script.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
