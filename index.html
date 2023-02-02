@@ -33,102 +33,32 @@
         <button class="profile__add-button" type="button"></button>
       </section>
       <section class="elements">
-        <ul class="elements__grid">
-          <li class="element">
-            <img
-              src="./images/Seoul.JPG"
-              class="element__rectangle"
-              alt="Необычный корабль в Сеуле"
-            />
-            <div class="element__group">
-              <h2 class="element__place">Сеул</h2>
-              <button
-                class="element__like element__like_active"
-                type="button"
-              ></button>
-            </div>
-          </li>
-          <li class="element">
-            <img
-              src="./images/Beijing.JPG"
-              class="element__rectangle"
-              alt="Китайский красный фонарик"
-            />
-            <div class="element__group">
-              <h2 class="element__place">Пекин</h2>
-              <button
-                class="element__like element__like_active"
-                type="button"
-              ></button>
-            </div>
-          </li>
-          <li class="element">
-            <img
-              src="./images/Shanghai.JPG"
-              class="element__rectangle"
-              alt="Остановка и двухэтажный трамвай"
-            />
-            <div class="element__group">
-              <h2 class="element__place">Шанхай</h2>
-              <button
-                class="element__like element__like_active"
-                type="button"
-              ></button>
-            </div>
-          </li>
-          <li class="element">
-            <img
-              src="./images/Moscow.jpg"
-              class="element__rectangle"
-              alt="Красная площадь дом 1"
-            />
-            <div class="element__group">
-              <h2 class="element__place">Москва</h2>
-              <button
-                class="element__like element__like_active"
-                type="button"
-              ></button>
-            </div>
-          </li>
-          <li class="element">
-            <img
-              src="./images/St-Petersburg.jpg"
-              class="element__rectangle"
-              alt="Иссакиевский Собор"
-            />
-            <div class="element__group">
-              <h2 class="element__place">Санкт-Петербург</h2>
-              <button
-                class="element__like element__like_active"
-                type="button"
-              ></button>
-            </div>
-          </li>
-          <li class="element">
-            <img
-              src="./images/Sochi.jpg"
-              class="element__rectangle"
-              alt="Пальма в Сочи"
-            />
-            <div class="element__group">
-              <h2 class="element__place">Сочи</h2>
-              <button
-                class="element__like element__like_active"
-                type="button"
-              ></button>
-            </div>
-          </li>
-        </ul>
+        <ul class="elements__grid"></ul>
       </section>
     </main>
     <footer class="footer">
       <p class="footer__author">&copy; 2020 Mesto Russia</p>
     </footer>
-    <div class="popup">
+
+    <template class="element__template">
+      <li class="element">
+        <button class="element__delete" type="button"></button>
+        <img src="#" class="element__rectangle" alt="#" />
+        <div class="element__group">
+          <h2 class="element__place"></h2>
+          <button class="element__like" type="button"></button>
+        </div>
+      </li>
+    </template>
+
+    <div class="popup popup_type_edit">
       <div class="popup__container">
         <button class="popup__close" type="button"></button>
         <h2 class="popup__title">Редактировать профиль</h2>
-        <form class="popup__form" name="form_profile">
+        <form
+          class="popup__form popup__form_type_edit-profile"
+          name="form_profile"
+        >
           <input
             class="popup__input"
             type="text"
@@ -145,11 +75,48 @@
             required
             minlength="2"
           />
-          <!-- <button class="popup__save" type="submit">Сохранить</button> -->
           <input class="popup__save" type="submit" value="Сохранить" />
         </form>
       </div>
     </div>
+
+    <div class="popup popup_type_new-foto">
+      <div class="popup__container">
+        <button class="popup__close" type="button"></button>
+        <h2 class="popup__title">Новое место</h2>
+        <form
+          class="popup__form popup__form_type_add-place"
+          name="form_profile"
+        >
+          <input
+            class="popup__input"
+            type="text"
+            name="name_location"
+            placeholder="Название"
+            required
+            minlength="2"
+          />
+          <input
+            class="popup__input"
+            type="text"
+            name="reference"
+            placeholder="Ссылка на картинку"
+            required
+            minlength="2"
+          />
+          <input class="popup__save" type="submit" value="Создать" />
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup_type_open-image">
+      <div class="popup__image-container">
+        <button class="popup__close" type="button"></button>
+        <img class="popup__image-opened" src="#" alt="#" />
+        <p class="popup__image-caption"></p>
+      </div>
+    </div>
+
     <script src="./scripts/script.js"></script>
   </body>
 </html>
