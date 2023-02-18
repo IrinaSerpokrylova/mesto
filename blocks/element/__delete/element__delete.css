@@ -9,4 +9,9 @@
   object-fit: contain;
   border: 0;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.element__delete:hover {
+  opacity: 0.6;
 }

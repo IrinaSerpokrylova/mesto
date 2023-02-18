@@ -58,6 +58,7 @@
         <form
           class="popup__form popup__form_type_edit-profile"
           name="form_profile"
+          novalidate
         >
           <input
             class="popup__input"
@@ -66,7 +67,9 @@
             placeholder="Имя"
             required
             minlength="2"
+            maxlength="40"
           />
+          <span class="popup__item-error popup__item-error_name"></span>
           <input
             class="popup__input"
             type="text"
@@ -74,7 +77,9 @@
             placeholder="Предназначение"
             required
             minlength="2"
+            maxlength="200"
           />
+          <span class="popup__item-error"></span>
           <input class="popup__save" type="submit" value="Сохранить" />
         </form>
       </div>
@@ -86,6 +91,7 @@
         <h2 class="popup__title">Новое место</h2>
         <form
           class="popup__form popup__form_type_add-place"
+          novalidate
           name="form_profile"
         >
           <input
@@ -93,17 +99,20 @@
             type="text"
             name="name_location"
             placeholder="Название"
-            required
             minlength="2"
+            maxlength="30"
+            required
           />
+          <span class="popup__item-error popup__item-error_area_name"></span>
           <input
             class="popup__input"
-            type="text"
+            type="url"
+            id="link"
             name="reference"
             placeholder="Ссылка на картинку"
             required
-            minlength="2"
           />
+          <span class="popup__item-error popup__item-error_area_link"></span>
           <input class="popup__save" type="submit" value="Создать" />
         </form>
       </div>
@@ -116,7 +125,7 @@
         <p class="popup__image-caption"></p>
       </div>
     </div>
-
-    <script src="./scripts/script.js"></script>
+    <script defer src="./scripts/validaty.js"></script>
+    <script defer src="./scripts/script.js"></script>
   </body>
 </html>
