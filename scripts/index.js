@@ -100,23 +100,26 @@ function openAddCardPopup() {
   openPopup(popupAddPlace);
 }
 
+function createNewCard(name, link) {
+  const card = new Card(name, link, elementTemplate);
+  return card.createCard();
+}
+
 initialCards.forEach((item) => {
-  const card = new Card(item.name, item.link, elementTemplate);
-  cardSection.prepend(card.createCard());
+  addElement(item.name, item.link, elementTemplate);
 });
 
 function addElement(name, link, elementTemplate) {
-  const card = new Card(name, link, elementTemplate);
-  cardSection.prepend(card.createCard());
+  cardSection.prepend(createNewCard(name, link, elementTemplate));
 }
 
 function closeByEscClick(event) {
-  const currentPopup = document.querySelector(".popup_opened");
   if (
     event.key === "Escape" ||
     event.target.classList.contains("popup_opened") ||
     event.target.classList.contains("popup__close")
   ) {
+    const currentPopup = document.querySelector(".popup_opened");
     closePopup(currentPopup);
   }
 }
