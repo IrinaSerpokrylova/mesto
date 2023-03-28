@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>место</title>
-    <link rel="stylesheet" href="./pages/index.css" />
+    <!-- <link rel="stylesheet" href="./pages/index.css" /> -->
   </head>
   <body class="page">
     <header class="header">
       <img
-        src="./images/healet_logo.svg"
+        src="<%=require('../src/images/healet_logo.svg')%>"
         class="header__logo"
         alt="Логотип Место.Россия"
       />
@@ -18,7 +18,7 @@
       <section class="profile">
         <div class="profile__info">
           <img
-            src="./images/avatar.svg"
+            src="<%=require('../src/images/avatar.svg')%>"
             class="profile__avatar"
             alt="Жак-Ив Кусто"
           />
@@ -65,6 +65,7 @@
             type="text"
             name="name"
             placeholder="Имя"
+            id="name"
             required
             minlength="2"
             maxlength="40"
@@ -74,6 +75,7 @@
             class="popup__input"
             type="text"
             name="vocation"
+            id="vocation"
             placeholder="Предназначение"
             required
             minlength="2"
@@ -97,7 +99,7 @@
           <input
             class="popup__input"
             type="text"
-            name="name_location"
+            name="name"
             placeholder="Название"
             minlength="2"
             maxlength="30"
@@ -107,8 +109,8 @@
           <input
             class="popup__input"
             type="url"
-            id="link"
-            name="reference"
+            id="url"
+            name="url"
             placeholder="Ссылка на картинку"
             required
           />
@@ -125,6 +127,6 @@
         <p class="popup__image-caption"></p>
       </div>
     </div>
-    <script type="module" src="./scripts/index.js"></script>
+    <!-- <script type="module" src="./pages/index.js"></script> -->
   </body>
 </html>
