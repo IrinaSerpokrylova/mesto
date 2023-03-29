@@ -26,7 +26,7 @@ export const editButton = document.querySelector(".profile__edit-button");
 export const addButton = document.querySelector(".profile__add-button");
 export const closeButtons = document.querySelectorAll(".popup__close");
 
-export const elementTemplate = document.querySelector(".element__template");
+export const elementTemplate = ".element__template";
 export const cardSection = ".elements__grid";
 
 export const validationProperties = {

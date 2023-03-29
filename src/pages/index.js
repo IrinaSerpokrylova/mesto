@@ -20,12 +20,8 @@ import {
   inputVocation,
   cardSection,
   popupEdit,
-  closeButtons,
-  nameLocation,
-  referenceLocation,
   addButton,
   popupAddPlace,
-  popupElements,
   initialCards,
 } from "../utils/constants.js";
 
@@ -107,9 +103,7 @@ const popupAddCard = new PopupWithForm(popupAddPlace, {
 
 popupAddCard.setEventListeners();
 
-//Открытие формы добавления карточки места
 addButton.addEventListener("click", () => {
-  //открываем форму
   popupAddCard.open();
   placeAddValidation.toggleSubmitButton();
   placeAddValidation.resetInputError();

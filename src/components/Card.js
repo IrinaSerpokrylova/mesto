@@ -8,7 +8,7 @@ export class Card {
 
   _getTemplate() {
     return document
-      .querySelector(".element__template")
+      .querySelector(this._cardTemplateSelector)
       .content.querySelector(".element")
       .cloneNode(true);
   }
@@ -31,15 +31,23 @@ export class Card {
 
   _setEventListeners() {
     this._elementDelete.addEventListener("click", () => {
-      this._element.remove();
+      this._deleteCard();
     });
 
     this._elementLike.addEventListener("click", () => {
-      this._elementLike.classList.toggle("element__like_active");
+      this._toggleLike();
     });
 
     this._elementPic.addEventListener("click", () => {
       this._handleCardClick(this._name, this._url);
     });
+  }
+
+  _deleteCard() {
+    this._element.remove();
+  }
+
+  _toggleLike() {
+    this._elementLike.classList.toggle("element__like_active");
   }
 }
