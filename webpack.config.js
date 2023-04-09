@@ -10,7 +10,7 @@ module.exports = {
     filename: "[name].js",
     assetModuleFilename: "assets/[name][ext]",
   },
-
+  devtool: "inline-source-map",
   mode: "production",
   devServer: {
     port: 8080,

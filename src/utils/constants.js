@@ -64,3 +64,11 @@ export const initialCards = [
     url: "https://images.unsplash.com/photo-1662220474273-3444f0b018d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
   },
 ];
+
+export const config = {
+  url: "https://mesto.nomoreparties.co/v1/cohort-63",
+  headers: {
+    authorization: "12dd9e74-5d63-45ab-b340-1203c962dc2b",
+    "Content-Type": "application/json",
+  },
+};
