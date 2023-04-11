@@ -6,9 +6,8 @@ export const popupEditAvatar = document.querySelector(
   ".popup_type_edit-avatar"
 );
 export const popupImageOpen = document.querySelector(".popup_type_open-image");
-export const popupDeleteConfirmation = document.querySelector(
-  ".popup__delete-card"
-);
+export const popupDeleteConfirmation =
+  document.querySelector(".popup_type_delete");
 
 //forms
 export const profileForm = document.querySelector(
