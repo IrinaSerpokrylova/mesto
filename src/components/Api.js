@@ -23,7 +23,7 @@ export class Api {
     }).then((res) => this._serverResponse(res));
   }
 
-  changeUserInfo(data) {
+  updateUserInfo(data) {
     return fetch(`${this._url}/users/me`, {
       method: "PATCH",
       headers: this._headers,

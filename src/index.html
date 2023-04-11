@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>место</title>
-    <!-- <link rel="stylesheet" href="./pages/index.css" /> -->
   </head>
   <body class="page">
     <header class="header">
@@ -58,8 +57,12 @@
     <div class="popup popup__delete-card">
       <div class="popup__container">
         <button class="popup__close" type="button"></button>
-        <h2 class="popup__title">Вы уверены?</h2>
-        <input class="popup__save" type="submit" value="Да" />
+        <h2 class="popup__title popup__title_type_delete">Вы уверены?</h2>
+        <input
+          class="popup__save popup__save_type_delete"
+          type="submit"
+          value="Да"
+        />
       </div>
     </div>
 
@@ -86,7 +89,7 @@
           <input
             class="popup__input"
             type="text"
-            name="vocation"
+            name="about"
             id="vocation"
             placeholder="Предназначение"
             required
@@ -112,7 +115,7 @@
             class="popup__input"
             type="url"
             id="url"
-            name="url"
+            name="avatar"
             placeholder="Ссылка на картинку"
             required
           />
@@ -145,7 +148,7 @@
             class="popup__input"
             type="url"
             id="url"
-            name="url"
+            name="link"
             placeholder="Ссылка на картинку"
             required
           />

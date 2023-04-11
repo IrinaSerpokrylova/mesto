@@ -15,11 +15,11 @@ export class UserInfo {
 
   setUserInfo(data) {
     this._name.textContent = data.name;
-    this._about.textContent = data.vocation;
+    this._about.textContent = data.about;
     this._avatar.alt = data.name;
   }
 
-  setUserAvatar(url) {
-    this._avatar.src = url.avatar;
+  setUserAvatar(data) {
+    this._avatar.src = data.avatar;
   }
 }

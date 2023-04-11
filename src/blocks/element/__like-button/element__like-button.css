@@ -1,11 +1,11 @@
 .element__like-button {
   padding: 0;
-  margin: 30px 0 0;
+  background-image: url("../../../images/like-Vector.svg");
   min-width: 22px;
-  max-height: 19px;
-  align-items: center;
-  background-image: url(../../../images/like.svg);
+  height: 19px;
+
   background-color: transparent;
+  overflow: visible;
   border: 0;
   transition: 0.2s;
 }

@@ -1,5 +1,6 @@
 .popup__save {
   margin: 18px 36px 37px;
+  padding: 0;
   background-color: #000000;
   color: #ffffff;
   min-height: 50px;
